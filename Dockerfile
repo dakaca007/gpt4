@@ -6,6 +6,6 @@ RUN git clone https://github.com/xtekky/gpt4free.git
 WORKDIR /gpt4free
 RUN pip install gpt4free
 
-EXPOSE 7860
+EXPOSE 8501
 
 CMD ["streamlit", "run", "gui/streamlit_app.py"]
