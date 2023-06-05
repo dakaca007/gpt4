@@ -1,15 +1,3 @@
-FROM 
-
-RUN apt-get update && apt-get install -y git
-
-RUN git clone https://github.com/xtekky/gpt4free.git
-WORKDIR /gpt4free
-RUN pip install gpt4free
-RUN pip install --upgrade pip
-
-EXPOSE 8501
-
-CMD ["streamlit", "run", "gui/streamlit_app.py"]
 FROM centos:7
 
 # 安装宝塔面板
