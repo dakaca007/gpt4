@@ -2,7 +2,7 @@ FROM python:3.10
 
 RUN apt-get update && apt-get install -y git
 
-RUN git clone https://github.com/xtekky/gpt4free.git
+RUN git clone https://github.com/dakaca007/nmb.git
 WORKDIR /gpt4free
 RUN pip install gpt4free
 RUN pip install --upgrade pip
