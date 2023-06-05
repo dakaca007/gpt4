@@ -7,6 +7,6 @@ WORKDIR /gpt4free
 RUN pip install gpt4free
 RUN pip install --upgrade pip
 
-EXPOSE 8501
+EXPOSE 7860
 
 CMD ["streamlit", "run", "gui/streamlit_app.py"]
